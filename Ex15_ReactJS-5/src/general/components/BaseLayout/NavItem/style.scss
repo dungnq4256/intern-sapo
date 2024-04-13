@@ -1,0 +1,21 @@
+.NavItem{
+    box-sizing: border-box;
+    background-color:#dbdbdb;
+    border-radius: 0.5rem;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+    transition: ease 0.2s;
+  
+    &:hover{
+        background-color: #5180FB;
+        color: #fff;
+    }
+
+    &_active{
+        color: #fff;
+        background-color:#5180FB;
+    }
+}

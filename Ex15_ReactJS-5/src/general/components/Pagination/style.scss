@@ -1,0 +1,34 @@
+.Pagination {
+    .Pagination_Btn {
+        background-color: #ebebeb;
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 0.8rem;
+        width: 2rem;
+        height: 2rem;
+        transition: all ease 0.2s;
+        
+        &--active {
+            background-color: #5180fb;
+            color: #fff;
+        }
+    }
+    .Pagination_Btn:hover {
+        background-color: #5180fb;
+        color: #fff;
+    }
+    .Pagination_Btn:disabled{
+        background-color: #ebebeb;
+        color: #b4b4b4;
+    }
+    &_Dropdown{
+        p{
+            font-size: 0.8rem;
+            color: #606060;
+        }
+    }
+    &_DropdownToggle{
+        font-size: 0.8rem;
+        width: 3rem;
+    }
+}

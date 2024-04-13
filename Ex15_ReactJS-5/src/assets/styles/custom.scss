@@ -1,0 +1,49 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.err-text-field{
+  color: #f64e60;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#4C79ED 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#4C79ED);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+  }
+  
+  @keyframes s3{ 
+    100%{transform: rotate(1turn)}
+  }
+
+  .q-max-line-1 {
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+  .q-max-line-1, .q-max-line-2 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .list-group {
+    word-wrap: break-word;
+    background-clip: initial;
+    background-color: #fff;
+    border: 1px solid #ebedf3;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+    .list-header {
+        padding: 1.5rem 2rem;
+    }
+}

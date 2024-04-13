@@ -1,0 +1,49 @@
+.BaseNumberField {
+    label{
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: #b5b5c3;
+        margin-bottom: 0.4rem;
+    }
+    &_Input {
+        height: 100%;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &_Group {
+        height: 40px;
+        border: 1px solid #DBE3EF;
+
+        &:focus-within {
+            border: 1px solid #3E97FF;
+        }
+        &-invalid{
+            border: 1px solid #dc3545;
+        }
+    }
+
+    &_Disabled {
+        border: none;
+        background: #F2F3F7;
+
+        ::placeholder {
+            font-weight: 500;
+            color: #4A5677;
+        }
+    }
+
+    &_Eye {
+        position: absolute;
+        top: 30%;
+        right: 3%;
+        color:#b6b6b6;
+    }
+    input::-ms-reveal {
+        display: none;
+    }
+}
